@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+Description: 
+Cryptocurrency management system. It defines classes such as `Crypto`, `Bitcoin`, and `Ethereum` to represent cryptocurrencies, their properties, and operations. The code allows users to create cryptocurrency objects, compare them, combine them, set prices, retrieve prices, and calculate the total value of cryptocurrency holdings. It also showcases specialized methods for Bitcoin mining and Ethereum token minting.
+
+
+Heads up -> In this challenge you will use the hasattr() python function
+This function is used smiliar to the isinstance() function
+
+hasattr() => Used to check if a Class has a certain Property
+
+
+1. The code introduces the `Crypto` class, which serves as a foundation for creating and manipulating various cryptocurrencies. It includes several essential methods:
+   - The `__init__` method initializes a `Crypto` object with a given `name`.
+   - The `__str__` method returns a string representation of the `Crypto` object, describing it as a cryptocurrency.
+   - The `__eq__` method enables comparison between two `Crypto` objects based on their names.
+   - The `__add__` method allows the merging of two `Crypto` objects, combining their names into a new cryptocurrency.
+   - The `set_price` method assigns a price to the `Crypto` object.
+   - The `get_price` method retrieves the assigned price of the `Crypto` object, if set.
+   - The `calculate_total_value` method calculates the total value of a given quantity of the `Crypto` object, based on its assigned price.
+
+2. Two subclasses of `Crypto` are defined:
+   - The `Bitcoin` subclass represents the Bitcoin cryptocurrency. It inherits from `Crypto` and includes a `mine` method that simulates the mining process.
+   - The `Ethereum` subclass represents the Ethereum cryptocurrency. It also inherits from `Crypto` and includes a `mint` method that simulates the creation of Ethereum tokens.
+
+3. In the usage example:
+   - Instances of the `Crypto`, `Bitcoin`, and `Ethereum` classes are created, each with their respective names.
+   - Various methods of the classes are demonstrated:
+     - Printing the string representation of a `Crypto` object.
+     - Comparing two `Crypto` objects for equality.
+     - Combining the names of two `Crypto` objects into a new cryptocurrency.
+     - Setting the price of a `Crypto` object and retrieving the assigned price.
+     - Invoking specialized methods (`mine` and `mint`) unique to the `Bitcoin` and `Ethereum` subclasses, respectively.
+     - Evaluating the total value of cryptocurrencies in a portfolio, using a list of dictionaries containing the `Crypto` objects and corresponding quantities.
+

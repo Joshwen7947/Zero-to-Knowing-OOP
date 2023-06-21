@@ -1,0 +1,7 @@
+Draw 4 solid squares
+
+Each square is a different color
+
+Each square is in a different location
+
+Each square CAN be the same size

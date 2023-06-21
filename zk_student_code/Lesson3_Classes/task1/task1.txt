@@ -1,0 +1,22 @@
+Try to recreate the Class we saw during the introduction of this new topic!
+
+Some key things to remember
+    1. Class App
+    2. init has 3 properties.  users,storage, username
+    3. There are 2 additional methods. (login and increase_capacity)
+    4. login method -> Checks if the username is "owner" and users is not empty
+        -if true, It will welcome the user and print their storage number
+    5. increase_capacity method -> This accepts a number and add this to the current storage value
+        -Then printing out the updated amount
+    6. Create two objects.  Each object calls both methods.  Be creative
+
+
+
+    ######################
+
+    BONUS:
+
+    Create a bonus method:
+
+    1. Checks, if users is greater than storage.  A upgrade amount is asked, this amount it added to the current storage
+    2. Otherwise, Print off the remaining storage left

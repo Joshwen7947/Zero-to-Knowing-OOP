@@ -1,0 +1,11 @@
+Create functions to draw shapes
+
+
+Create 3 functions, each function will draw a different shape
+
+This is similar to the example we saw in the lesson!
+
+
+Create a loop that asks for inputs
+
+based on what you input, you will collect inputs to be given to one of your functions when called

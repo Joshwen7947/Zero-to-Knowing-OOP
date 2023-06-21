@@ -1,0 +1,30 @@
+Title: Online Course Management System
+
+
+
+Description:
+The code represents an online course management system that helps keep track of online courses, students, and their grades. It allows you to do things like enroll students, see course details, and calculate average grades.
+
+#####
+
+Let's imagine we have an "OnlineCourse" class. When we create a new course, we need to give it a name and the name of the person who will teach the course (we call them the instructor). The system will also create a list where we can keep track of the students who enroll in the course.
+
+Here are the main things we can do with this system:
+
+#1 - Enroll a student -> enroll_student(student_name): If someone wants to join a course, we can add their name to the list of students in that course. When we do this, the system will tell us that the student has successfully enrolled.
+
+#2 - See course details -> get_course_details(): We can ask the system to show us information about a course. This includes the course name, the name of the instructor, and the names of all the students who have enrolled.
+
+#3 - Mark a student as completed -> complete_course(student_name): If a student finishes the course, we can tell the system that they are done. The system will remove their name from the list of enrolled students and tell us that the student has successfully completed the course. But if we try to mark someone as completed who is not enrolled, the system will tell us that the student is not in the course.
+
+#4 - Calculate average grade -> calculate_average_grade(grades): We can also ask the system to calculate the average grade for the course. To do this, we need to provide a list of grades, and the system will tell us the average (or typical) grade for all the students in the course.
+
+Outside your class, we have an example of how to use the system. We can enter the course name, instructor's name, and the name of a student. Then, the system will create the course and add the student to it. It will also calculate the average grade based on a list of grades. Finally, it will show us the course details and mark the student as completed.
+
+So, this code is like a computer program that helps manage online courses. It keeps track of students, grades, and other important information to make it easier for people to learn and complete their courses online.
+
+
+
+
+
+

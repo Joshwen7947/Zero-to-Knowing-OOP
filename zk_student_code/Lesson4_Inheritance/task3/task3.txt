@@ -1,0 +1,48 @@
+Title: Library Management System
+
+
+
+
+Description:
+This code represents a library management system that allows you to manage a collection of books. The system provides functionalities for adding books, displaying all books, searching for books by author, and searching for books within a specific year range.
+
+#####
+
+Book Class:
+The Book class serves as the base class for different types of books. 
+
+-It has attributes for title, author, and year. 
+
+-The display_info method is used to print the title, author, and year of a book.
+
+###
+
+FictionBook Class:
+The FictionBook class is a subclass of the Book class. It adds an additional attribute called genre. 
+
+-The display_info method is overridden to include the genre when printing book information.
+
+###
+
+NonFictionBook Class:
+The NonFictionBook class is another subclass of the Book class. It adds an attribute called topic. 
+
+-Similar to the FictionBook class, the display_info method is overridden to include the topic in the book information.
+
+###
+
+Library Class:
+-The Library class represents the library management system. It has a list to store the books in the library. 
+
+-The add_book method is used to add a book to the library. The display_all_books method prints the information of all the books in the library. 
+
+-The search_by_author method searches for books by a specific author and displays their information. 
+
+-The search_by_year_range method searches for books published within a given year range and displays their information.
+
+#####
+
+Outside your classes, a Library object is created. Four books, including both fiction and non-fiction, are instantiated and added to the library. The display_all_books method is called to print the information of all the books in the library. The search_by_author method is then used to find and display books written by a specific author. Finally, the search_by_year_range method is used to find and display books published within a given year range.
+
+This code provides a basic library management system where you can add books, view all books, search for books by author, and search for books published within a specific time period. It allows for efficient organization and retrieval of book information in a library setting.
+

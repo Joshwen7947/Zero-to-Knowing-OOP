@@ -1,0 +1,30 @@
+Title: Animal Passport and Clinic Database
+
+Description:
+Welcome to the Animal Passport and Clinic Database! This code allows us to gather information about different animals, store their details, and search for specific species based on regions. Let's explore the functionality and purpose of each class in this code.
+
+Animal Class:
+The Animal class serves as the foundation for creating instances of various animals. It has the following attributes:
+- "region": Represents the geographic region where the animal is found.
+- "animal_type": Specifies the species or type of animal.
+- "color": Describes the color of the animal.
+- "lethal": Indicates whether the animal is dangerous or not, with a value of True or False.
+
+The class contains an "animal_bio()" method, which displays an animal's passport-like information. This method prints the animal's region, species, color, and whether it is dangerous or not.
+
+Clinic Class (Child Class of Animal):
+The Clinic class inherits from the Animal class, representing a specialized clinic or database for animals. It introduces two additional methods:
+- "animal_info()": This method provides a brief summary of the animal, mentioning its species and region.
+- "search(animals)": The search method prompts the user to enter a region and then searches the list of animals passed as a parameter. It matches the entered region with the animals' regions and prints the species of animals found in that region.
+
+The Main Code:
+The main code utilizes the Animal and Clinic classes to create an interactive animal database. It follows these steps:
+1. Requests the user to input the number of animals to be added to the database.
+2. In a loop, it prompts for the animal's region, species, color, and whether it is dangerous.
+3. Creates an Animal instance with the provided information and adds it to the "animals" list.
+4. Instantiates a Clinic object named "clinic" with default values: region ("Asia"), species ("tiger"), color ("orange"), and dangerous (True).
+5. Invokes the "animal_bio()" method on the "clinic" object to display its passport-like information.
+6. Calls the "animal_info()" method on the "clinic" object to provide a summary of the animal.
+7. Executes the "search(animals)" method on the "clinic" object, allowing the user to search for animals in a specific region. It iterates over the "animals" list, matches the entered region, and prints the species of animals found.
+
+With this code, we can explore the Animal Passport and Clinic Database, learn about different animals, and search for species based on regions. It facilitates organization and retrieval of information about animals, contributing to the study and conservation of diverse wildlife populations. Enjoy your journey into the fascinating world of animals!

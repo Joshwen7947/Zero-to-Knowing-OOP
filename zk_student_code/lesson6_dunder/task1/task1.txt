@@ -1,0 +1,30 @@
+Title: Staff Tracking System
+
+
+
+
+We can create a system for checking the different roles within a company
+
+1. Start by defining the base class Employee with the __init__() method. This method should initialize the name and employee_id attributes.
+
+2. Implement the __str__() method in the Employee class. It should return a formatted string that represents the employee's name and ID.
+
+3. Define the __eq__() method in the Employee class. This method compares the employee's employee_id with another object of the same class. If they match, return True; otherwise, return False.
+
+4. create a derived class Manager that inherits from the Employee class. Add an additional attribute, department, in the __init__() method of the Manager class. Use super() to call the base class's __init__() method and pass the required arguments.
+
+5. Implement the __str__() method in the Manager class to return a formatted string that includes the manager's name, ID, and department.
+
+6. Define the __eq__() method in the Manager class. Similar to the Employee class, compare the manager's employee_id with another object of the same class.
+
+7. Create another derived class Staff that also inherits from the Employee class. In the __init__() method of the Staff class, add an additional attribute, role.
+
+8. Implement the __str__() method in the Staff class to return a formatted string representing the staff member's name, ID, and role.
+
+9. Define the __eq__() method in the Staff class to compare the staff member's employee_id with another object of the same class.
+
+10. Finally, in the Employee, Manager, and Staff classes, implement the __add__() method. For the Employee class, simply return an error message as adding two employees is not meaningful. In the Manager class, check if the other object is also a Manager and if their departments match. If the conditions are met, create a new Manager object with the combined names, a unique ID of -1, and the shared department. Otherwise, return an error message stating that addition cannot be performed between managers from different departments. For the Staff class, return an error message as adding staff members is not allowed.
+
+11. create instances of Employee, Manager, and Staff objects with different attributes.
+
+Test the code by printing the objects using print(), comparing their equality using the == operator, and performing addition operations using the + operator.

@@ -1,0 +1,8 @@
+Column Visualization
+
+
+Create 3 objects 
+
+Each object will draw a different colored triangle
+
+Draw these Triangles in a column 

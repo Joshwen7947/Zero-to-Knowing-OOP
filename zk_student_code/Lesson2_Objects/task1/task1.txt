@@ -1,0 +1,7 @@
+Create a Hexagon 
+
+Each side of the shape is a different color 
+
+There are many ways to do this, which ever works for you!
+
+Remember to think Loops to solve this
